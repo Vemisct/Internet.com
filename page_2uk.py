@@ -25,8 +25,9 @@ class Page2Uk(QMainWindow):
         self.hide()
         self.w2 = Page2Uks1()
         self.w2.show()
-        self.w2.destroyed.connect(self.back_to)
+        self.w2.ui.pushButton.clicked.connect(self.back_to)
     
     def back_to(self):
         self.show()
+        self.w2.close()
         

@@ -17,7 +17,7 @@ class Ui_Form(object):
         Form.resize(500, 400)
         Form.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setGeometry(QtCore.QRect(150, 350, 200, 50))
+        self.label_3.setGeometry(QtCore.QRect(150, 0, 200, 50))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.label_3.setFont(font)
@@ -37,6 +37,13 @@ class Ui_Form(object):
         self.calendarWidget.setGridVisible(False)
         self.calendarWidget.setNavigationBarVisible(True)
         self.calendarWidget.setObjectName("calendarWidget")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(200, 340, 100, 50))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -45,6 +52,7 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_3.setText(_translate("Form", "Календар"))
+        self.pushButton.setText(_translate("Form", "Повернутися"))
 
 
 if __name__ == "__main__":

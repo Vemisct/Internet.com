@@ -48,6 +48,13 @@ class Ui_Form(object):
         self.label_4.setFont(font)
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(200, 325, 100, 50))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -59,6 +66,7 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "Приходьте по цьому адресу:"))
         self.label_3.setText(_translate("Form", "Та купуйте купони, поки не розкупили!"))
         self.label_4.setText(_translate("Form", "Розпродаж купонів на каву! Дійсний: з 30.10.2024 по 12.11.2024"))
+        self.pushButton.setText(_translate("Form", "Повернутися"))
 
 
 if __name__ == "__main__":
