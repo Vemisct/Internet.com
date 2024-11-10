@@ -24,8 +24,10 @@ class Page3Uk(QMainWindow):
     def go(self):
         self.hide()
         self.w2 = Page3Uks1()
+        self.w2.w2.messageBox.finished.connect(self.back_to)
         self.w2.show()
 
     def back_to(self):
         self.show()
+        self.w2.w2.close()
         self.w2.close()
