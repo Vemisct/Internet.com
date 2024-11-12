@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QMainWindow
 from pr_v1_l1 import Ui_Form
 from main_uk import MainUk
+from main_eng import MainEng
 
 class Widget(QMainWindow):
     def   __init__(self):
@@ -14,6 +15,10 @@ class Widget(QMainWindow):
     def next(self):
         if self.ui.radioButton_2.isChecked():
             self.ui2 = MainUk()
+            self.ui2.show()
+            self.close()
+        if self.ui.radioButton.isChecked():
+            self.ui2 = MainEng()
             self.ui2.show()
             self.close()
 
